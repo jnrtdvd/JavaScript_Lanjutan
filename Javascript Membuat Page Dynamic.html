@@ -1,0 +1,19 @@
+<HTML> <SCRIPT language="JavaScript">
+function InputPassword()
+{	coba=1;
+	var Pass
+	do {				Pass=prompt('Masukan Password!')
+						if (Pass=="Hanya Aku Yang Tahu")
+						{			alert("Hai..Selamat datang!!");
+									window.open('coba1.htm');
+									break;				}
+		else			{			alert("Password nggak cocok! Ulangi lagi!!");
+									if (coba==3)
+{ alert("Maaf sudah 3x!!");
+	history.go(-1);		}
+	coba=coba+1;	}	}
+While (coba<=3)
+}
+</SCRIPT> <form method="POST">
+<p><input type=button value="Password" name="B3" onClick="Input Password()"> </p>
+</form> </HTML>
